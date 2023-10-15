@@ -1,0 +1,34 @@
+提交一个git或者github
+
+#确定版本号
+git version
+
+#用户名和用户email
+git config --global user.name "misscai0"
+git config --global user.email "wwrl0525@163.com"
+
+#当前目录初始化，创造.git隐藏文件夹
+git init
+
+#把文件加入git版本控制系统(temporary)
+git add filename  #加某个文件
+git add .   #加当前文件夹所有文件
+
+#把刚才暂时保存的变更固定上传
+#打开了一个vim的终端编辑器，默认不能写东西，按a或者i进入编辑模式，写几个字的说明，按esc推出编辑模式，舒服英文冒号:wq，按回车
+git commit
+
+#提交的简化版本
+git commit -m "第二次提交"
+
+#查看提交日志
+git log
+
+#创建一个main分支并将其切换为主分支
+git branch -M main
+
+#添加远程仓库地址
+git remote add origin https://github.com/misscai0/note_py_liao.git
+
+#上传到github
+git push -u origin main
